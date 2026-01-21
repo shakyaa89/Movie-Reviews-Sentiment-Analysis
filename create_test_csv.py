@@ -16,3 +16,5 @@ data = load_reviews(pos_dir, "positive") + load_reviews(neg_dir, "negative")
 test_df = pd.DataFrame(data, columns=["review", "sentiment"])
 
 test_df.to_csv("reviews_test.csv", index=False)
+
+
